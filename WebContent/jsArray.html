@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>数组</title>
+<script type="text/javascript">
+ function array(){ //声明函数
+  var myarr=new Array();          //声明一维数组
+  for(var i=0;i<3;i++){           //一维数组长度为3
+    myarr[i]=new Array();         //声明二维数组
+    for(var j=0;j<6;j++){         //二维数组的长度为6
+        myarr[i][j]=i*j;          //赋值，每个数组元素的值为i*j
+        document.write(myarr[i][j]+",");
+    }
+    document.write("<br>");
+  }
+ }
+ 
+ function sr(){
+     var  arr = ['*','##',"***","&&","****","##*"];
+	 arr[7] = "**";
+	 document.write("图形为："+"</br>"+arr[0]+"</br>"+arr[7]+"</br>"+arr[2]+"</br>"+arr[4]);
+ }
+
+</script>
+</head>
+<body>
+ <button onclick="array()">二维CLICK</button>
+ <button onclick="sr()">一维CLICK</button>
+</body>
+</html>
